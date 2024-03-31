@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <title>Aplicativo de Pintura</title>
+</head>
+<body>
+    <header>
+        <h1>Aplicativo de Pintura</h1>
+    </header>
+
+    <main>
+        <div class="container-canvas">
+            <canvas id="telaDePintura" width="900" height="600"></canvas>
+        </div>
+
+        <div class="ferramentas">
+            <div class="cores">
+                <input type="color" id="seletorDeCor" value="#000000">
+            </div>
+            <div class="tamanhos-pincel">
+                <button class="tamanho-pincel" data-size="5">Extra Fino</button>
+                <button class="tamanho-pincel" data-size="10">Fino</button>
+                <button class="tamanho-pincel ativo" data-size="20">Médio</button>
+                <button class="tamanho-pincel" data-size="30">Grosso</button>
+            </div>
+            <button class="ferramenta ativo" id="ferramentaPincel" data-action="pincel"><i class="material-icons-outlined"></i> Pincel</button>
+            <button class="ferramenta" id="ferramentaBorracha" data-action="borracha"><i class="material-icons-outlined"></i> Borracha</button>
+            <button class="ferramenta" id="ferramentaLinha" data-action="linha"><i class="material-icons-outlined"></i> Linha</button>
+            <button class="ferramenta" id="ferramentaRetangulo" data-action="retangulo"><i class="material-icons-outlined"></i> Retângulo</button>
+            <button class="ferramenta" id="ferramentaCirculo" data-action="circulo"><i class="material-icons-outlined"></i> Círculo</button>
+            <button class="ferramenta" id="botaoLimpar">Limpar</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
